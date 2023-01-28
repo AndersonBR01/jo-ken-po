@@ -23,11 +23,37 @@
         </h1>
 
         <div class="bloco">
-            <div class="label bg__grenn">USER</div>
+            <div class="label bg__green">USER</div>
             <div class="label bg__red">PC</div>
             <div id="contador" class="placar">
                 0:0
             </div>
+        </div>
+
+        <div class="bloco bg__grey selected__image">
+            <div class="user">
+                <img src="assets/images/rock.png" alt="pedra">
+            </div>
+            <div id="pc" class="reverse">
+                <!--<img src="assets/images/rock.png" alt="pedra">-->
+            </div>
+        </div>
+
+        <h2>Escolha seu Movimento</h2>
+
+        <div class="buttons">
+            <label >
+                <input type="radio" onclick="reset()" name="play" value="rock" checked>
+                <button class="btn"><img src="assets/images/rock.png" alt="rock"></button>
+            </label>
+            <label >
+                <input type="radio" onclick="reset()" name="paly" value="paper" >
+                <button class="btn"><img src="assets/images/paper.png" alt="paper"></button>
+            </label>
+            <label >
+                <input type="radio" onclick="reset()" name="paly" value="scissor">
+                <button class="btn"><img src="assets/images/scissor.png" alt="scissor"></button>
+            </label>
         </div>
 
     </div>
