@@ -1,75 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS-->
-    <link rel="stylesheet" href="css/game.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/app.js" defer></script>
     
-
-    
-
-    <title>Pedra Pepel Tesoura</title>
-
+    <title>PEDRA | PAPEL | TESOURA</title>
 </head>
 <body>
-    
+
+    <!--TELA DO GAME-->
     <div id="game" class="container">
         <h1>
-            Pedra Pepel Tesoura
+            Pedra - Papel - Tesoura
         </h1>
 
+        <!--TELA DO PALCAR-->
         <div class="bloco">
-            <div class="label bg__green">USER</div>
-            <div class="label bg__red">PC</div>
+            <div class="label bg-green">USER</div>
+            <div class="label bg-red">PC</div>
             <div id="contador" class="placar">
-                0:0
+                0:0 
             </div>
         </div>
 
-        <div class="bloco bg__grey selected__image">
-            <div class="user">
-                <img src="assets/images/rock.png" alt="pedra">
+        <!--TELA DE SELEÇÃO -->
+        <div class="bloco bg-grey selected-image">
+            <div id="user">
+                <img src="assets/images/rock.png" alt="rock">
             </div>
             <div id="pc" class="reverse">
-                <!--<img src="assets/images/rock.png" alt="pedra">-->
+                <img src="assets/images/rock.png" alt="rock">
             </div>
         </div>
-
-        <h2>Escolha seu Movimento</h2>
-
-        <div class="buttons">
-            <label >
-                <input type="radio" onclick="reset()" name="play" value="rock" checked>
-                <button class="btn"><img src="assets/images/rock.png" alt="rock"></button>
-            </label>
-            <label >
-                <input type="radio" onclick="reset()" name="paly" value="paper" >
-                <button class="btn"><img src="assets/images/paper.png" alt="paper"></button>
-            </label>
-            <label >
-                <input type="radio" onclick="reset()" name="paly" value="scissor">
-                <button class="btn"><img src="assets/images/scissor.png" alt="scissor"></button>
-            </label>
-        </div>
-        <div class="bloco">
-            <div id="playing" class="btn-play">Jogar</div>
-        </div>
     </div>
 
-    <div id="winner" class="container end__screen none">
+    <!--TELA DE VITORIA-->
+    <div id="winner" class="container end-screen none">
+
         <span>🏆🏆🏆</span>
         <h3>Você Ganhou!!</h3>
-        <button onclick="newGame()">Jogar Novamente</button>
+        <button onclick="newGame()">JOGAR NOVAMENTE</button>
+
     </div>
 
-    <div id="loser" class="container end__screen none">
-        <h3>Você Perdeu!!</h3>
-        <button onclick="newGame()">Jogar Novemente</button>
-    </div>
-<!--Script-->
+    <!--TELA DE DERROTA-->
+    <div id="loser" class="container end-screen none">
 
-<script  src="js/App.js"></script>
+        <h3>VOCÊ PERDEU!!</h3>
+        <button onclick="newGame()">JOGAR NOVAMENTE</button>
+
+    </div>
+    
 </body>
 </html>
