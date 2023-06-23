@@ -30,12 +30,37 @@
         <!--TELA DE SELEÇÃO -->
         <div class="bloco bg-grey selected-image">
             <div id="user">
-                <img src="assets/images/rock.png" alt="rock">
+                <img src="assets/images/rock.png" >
             </div>
-            <div id="pc" class="reverse">
-                <img src="assets/images/rock.png" alt="rock">
-            </div>
+            <div id="pc" class="reverse"></div>
         </div>
+
+        <!--TELA DE MOVIMENTOS-->
+        <h2>Escolha seu movimento</h2>
+
+        <div class="buttons">
+
+            <label>
+                <input type="radio" onclick="reset()" name="play" value="rock" checked>
+                <button class="btn"> <img src="./assets/images/rock.png" ></button>
+            </label>
+
+            <label>
+                <input type="radio" onclick="reset()" name="play" value="paper" checked>
+                <button class="btn"> <img src="./assets/images/paper.png" ></button>
+            </label>
+
+            <label>
+                <input type="radio" onclick="reset()" name="play" value="scissor" checked>
+                <button class="btn"> <img src="./assets/images/scissor.png"></button>
+            </label>
+
+        </div>
+        <!--TELA DE JOGAR-->
+        <div class="bloco">
+            <div id="playing" class="btn-play">Jogar</div>
+        </div>
+
     </div>
 
     <!--TELA DE VITORIA-->

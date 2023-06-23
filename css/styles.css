@@ -47,6 +47,18 @@ h1 {
 
 }
 
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 20px 0;
+
+}
+
+label {
+    position:  relative;
+}
+
 /*configuraçõa das classes*/
 .container {
     position: absolute;
@@ -59,32 +71,6 @@ h1 {
 
 .none {
     display: none;
-}
-
-/*configuraçõa dos id*/
-#winner, #loser {
-    color: var(--white);
-    background-color: var(--blue);
-}
-
-/*configuraçõa das classes e tags*/
-.end-screen h3 {
-    font-size: 2.2rem;
-    text-transform: uppercase;
-}
-
-.end-screen button {
-    padding: 10px;
-    width: 75%;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-.end-screen span {
-    font-size: 3rem;
 }
 
 .center {
@@ -146,6 +132,77 @@ h1 {
     height: 140px;
 }
 
+.reverse {
+    transform: scaleX(-1);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    background-color: var(--grey);
+    cursor: pointer;
+    transition: .3s;
+
+}
+.btn-play, .btn-play:disabled:hover {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    background-color: var(--grey);
+    color: var(--dark);
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+
+}
+
+.btn-play:hover {
+    background-color: var(--blue);
+    color: var(--white);
+
+}
+/*configuraçõa dos id*/
+#winner, #loser {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+/*configuraçõa das classes e tags*/
+.end-screen h3 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.end-screen button {
+    padding: 10px;
+    width: 75%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.end-screen span {
+    font-size: 3rem;
+}
+
 .selected-image div{
     width: 50%;
     min-height: 80px;
@@ -157,6 +214,21 @@ h1 {
     max-width: 80%;
 }
 
-.reverse {
-    transform: scaleX(-1);
+.buttons img {
+    max-width: 50%;
+}
+
+
+[type = radio] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0%;
+}
+
+[type = radio]:checked + button {
+    background-color: var(--blue);
+
 }
