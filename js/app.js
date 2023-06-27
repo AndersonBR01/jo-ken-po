@@ -65,12 +65,12 @@ function analyze () {
 
     contador.innerHTML = contUser + ":" + contPc;
 
-    if (contUser >=3) {
+    if (contUser >=6) {
         winner.classList.remove('none');
         winner.classList.add('center');
     }
 
-    if (contPc >=3) {
+    if (contPc >=6) {
         winner.classList.remove('none');
         winner.classList.add('center');
     }
